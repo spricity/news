@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>技术民工每天必看的文章</title>
+		<link href="iconfont.css" rel="stylesheet"/>
+		<link href="res.css" rel="stylesheet"/>
+		<link href="media.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id="top-stripe" class="top-stripe"></div>
+		<div id="top-menu">
+            <a class="submit active-tooltip" href="#" data-toggle="modal" ref="tooltip" data-placement="bottom" data-original-title="Submit Content"><i class="iconfont">&#xF023;</i></a>
+        <a class="about active-tooltip" href="#about" ref="tooltip" data-placement="bottom" data-original-title="About Us"><i class="iconfont">&#xF04A;</i></a>
+        <a class="login active-tooltip" href="#logout" ref="tooltip" data-placement="bottom" data-original-title="Login"><i class="iconfont">&#xF027;</i></a>
+    </div>
+    <div id="top-menu-mobile">
+	    <div class="toggle-fixed-menu-mobile"><i class="iconfont">&#xF04D;</i></div>
+	    	<a class="login" href="#"><i class="iconfont">&#xF027;</i></a>
+	        <a class="" href="#"><i class="iconfont">&#xF034;</i></a>
+	        <a class="" href="#"><i class="iconfont">&#xF01D;</i></a>
+	        <a class="active" href="#"><i class="iconfont">&#xF01E;</i></a>
+    </div>
+		<div id="fixed-menu">
+		    <div class="fixed-content">
+		        <div class="fixed-content-2">
+		            <div class="logo">
+		                <a href="#"><img src="h5.png"></a>
+		            </div>
+		            
+
+		            <div class="subnav-container">
+			            <ul class="article-type">
+		                    <li class="active"><a href=""><i class="iconfont">&#xF034;</i><span>首页</span></a></li>
+		                    <li class=""><a href=""><i class="iconfont">&#xF01D;</i><span>喜欢</span></a></li>
+		                	<li class=""><a href=""><i class="iconfont">&#xF01E;</i><span>书签</span></a></li>
+		                </ul>
+		             </div>
+		             
+		             <div class="search-container">
+		                <div class="search-icon">
+			                <a href="/" onclick="return false;"><i class="iconfont">&#xF02A;</i></a>
+			            </div>
+		                <form class="form-search" action="#" method="get">
+		                    <input type="text" name="query" id="query" class="search-input" placeholder="搜索从这里开始" value="" >
+		                </form>
+		                <div class="clr"></div>
+		            </div>
+
+		            <div class="nav-link-container">
+		                <a class="nav-link active" href=""><div class="nav-stripe"></div><i class="iconfont">&#xF034;</i>文章</a>
+		                <a class="nav-link " href=""><div class="nav-stripe"></div>友情链接</a>
+		                <a class="nav-link " href=""><div class="nav-stripe"></div>个人中心</a>
+		                <a class="nav-link " href=""><div class="nav-stripe"></div>会员</a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="outer-wrap">
+			<div id="main-container">
+				<div id="main">
+					<ol class="articles" id="infinite-articles">
+						 <% for(var i=0; i<articles.length; i++) { %>
+				        
+				    
+						<li class="  article">												
+							
+							<div class="inner-listing">
+								<div class="main">
+									<a href="javascript:;" class="upvote"><i class="uxfont">&#353;</i></a>
+									<a href="<%= articles[i].link %>" class="title link-click" id="click-18856" target="_blank"><%= articles[i].title %></a>
+									<a href="http://pointblankseo.com/creative-link-building" class="domain link-click" id="click-18856" target="_blank"></a>
+									<div class="clr"></div>
+								</div>
+								<div class="minor">
+									<span class="posted-by">
+										<span id="points-18856"><strong>268</strong></span>
+										喜欢
+									</span>
+									<a href="#" class="post-user">净空</a>
+									<span>2013.10.13 10:00</span>
+					
+									<span class="domain hidden-phone">
+											&nbsp;<i class="icon-flag"></i><a class="flag" href="http://www.inbound.org/articles/flag/18856">apple</a>
+											&nbsp;<i class="icon-tag"></i>
+											<a class="article-category" href="http://www.inbound.org/articles/all/votes?query=SEO">乔布斯</a>
+									</span>
+									<span class="comment-count">&nbsp;<i class="icon-comments"></i>
+										<a class="comment-count" href="http://www.inbound.org/articles/view/the-most-creative-link-building-post-ever">22评论</a>
+									</span>
+								</div>
+							</div>
+		
+							<div class="commenters-container">
+							</div>
+				
+							<div class="clr"></div>
+		
+							<div class="btn-wrap">
+			
+						</div>
+		
+					</li>
+					<% } %>
+		
+	
+				</ol>
+	    	
+	    	</div>
+			</div>
+			<div id="sidebar">
+	
+	<div class="sidebar-inner">
+		<h5>热门文章</h5>
+		<div class="text">
+			<div class="inner-box">
+				<ul class="sidebar-featured">
+					<li>
+						<a href="http://blog.csdn.net/ygrx/article/details/12748857">
+							
+							<div class="name">文章相似度计算</div>
+							<div class="karma">408 <span class="info">投票</span></div>
+							<div class="clr"></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://huangzhir.iteye.com/blog/1959901">
+							
+							<div class="name">小米抢购前面JS代码</div>
+							<div class="karma">267 <span class="info">投票</span></div>
+							<div class="clr"></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.uisdc.com/ios7-app-interface-design">
+							
+							<div class="name">超赞！IOS7应用界面设计深度剖析</div>
+							<div class="karma">184 <span class="info">投票</span></div>
+							<div class="clr"></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://jianshu.io/p/ui1DJU">
+							
+							<div class="name">响应式排版中的基础知识</div>
+							<div class="karma">176 <span class="info">投票</span></div>
+							<div class="clr"></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.silverna.org/blog/?p=297">
+							
+							<div class="name">Node.js给前端带来了什么？</div>
+							<div class="karma">169 <span class="info">投票</span></div>
+							<div class="clr"></div>
+						</a>
+					</li>
+							</ul>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+
+
+</div>
+		</div>
+
+	</body>
+</html>
