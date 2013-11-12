@@ -1,0 +1,15 @@
+{
+  "family": "sz",
+  "name": "upload",
+  "version": "v1",
+  "description": "html5 uploader and iframe uploader.",
+  "licenses": "BSD",
+  "spm": {
+    "alias": {
+      "$": "$"
+    },
+    "output": [
+      "upload.js"
+    ]
+  }
+}
